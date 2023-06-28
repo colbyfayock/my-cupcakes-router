@@ -2,7 +2,7 @@ import { cupcakes } from './cupcakes.ts';
 
 import './App.css'
 
-function Cupcake({ id }: { id: string }) {
+function Cupcake() {
   const cupcake = cupcakes.find(cupcake => cupcake.id === id);
   return (
     <div className="max-w-3xl m-auto py-10 px-8">

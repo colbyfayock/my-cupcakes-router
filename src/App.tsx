@@ -1,3 +1,5 @@
+import { Link } from 'wouter';
+
 import { cupcakes } from './cupcakes.ts';
 
 import './App.css'
@@ -14,7 +16,9 @@ function App() {
               <div className="px-8 py-4 pb-6">
                 <h2 className="card-title mb-4 text-2xl font-bold">{ cupcake.title }</h2>
                 <div className="card-actions">
-                  <button className="btn btn-primary">Buy Now</button>
+                  <Link href={`/cupcakes/${cupcake.id}`}>
+                    <a className="btn btn-primary">Buy Now</a>
+                  </Link>
                 </div>
               </div>
             </div>

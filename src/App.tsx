@@ -1,32 +1,4 @@
-import { useState } from 'react'
-
-import cupcakeChocolate from './assets/chocolate.jpg';
-import cupcakeFunfetti from './assets/funfetti.jpg';
-import cupcakeRedVelvet from './assets/red-velvet.jpg';
-import cupcakeVanilla from './assets/vanilla.jpg';
-
-const cupcakes = [
-  {
-    title: 'Chocolate',
-    id: 'chocolate',
-    image: cupcakeChocolate,
-  },
-  {
-    title: 'Funfetti',
-    id: 'funfetti',
-    image: cupcakeFunfetti,
-  },
-  {
-    title: 'Red Velvet',
-    id: 'red-velvet',
-    image: cupcakeRedVelvet,
-  },
-  {
-    title: 'Vanilla',
-    id: 'vanilla',
-    image: cupcakeVanilla,
-  },
-];
+import { cupcakes } from './cupcakes.ts';
 
 import './App.css'
 
